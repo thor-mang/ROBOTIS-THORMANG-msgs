@@ -2,7 +2,7 @@
 # CMake
 ################################################################################
 cmake_minimum_required(VERSION 2.8.3)
-project(thormang3_wholebody_module_msgs)
+project(thormang3_head_control_module_msgs)
 
 ################################################################################
 # Packages
@@ -12,7 +12,6 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   std_msgs
   sensor_msgs
-  geometry_msgs
   message_generation
 )
 
@@ -21,22 +20,13 @@ find_package(catkin REQUIRED COMPONENTS
 ################################################################################
 add_message_files(
   FILES
-  JointPose.msg
-  KinematicsPose.msg
-  WheelPose.msg
-  CirclePose.msg
-)
-
-add_service_files(
-  FILES
-  GetKinematicsPose.srv
+  HeadJointPose.msg
 )
 
 generate_messages(
   DEPENDENCIES
   std_msgs
   sensor_msgs
-  geometry_msgs
 )
 
 ################################################################################
@@ -47,7 +37,7 @@ generate_messages(
 # Catkin specific configuration
 ################################################################################
 catkin_package(
-  CATKIN_DEPENDS message_runtime std_msgs sensor_msgs geometry_msgs
+  CATKIN_DEPENDS message_runtime std_msgs sensor_msgs
 )
 
 ################################################################################
