@@ -31,6 +31,7 @@ add_message_files(
   RobotPose.msg
   JointFeedBackGain.msg
   WalkingJointStatesStamped.msg
+  ForceTorqueStates.msg
 )
 
 add_service_files(
