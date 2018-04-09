@@ -32,6 +32,7 @@ add_message_files(
   JointFeedBackGain.msg
   WalkingJointStatesStamped.msg
   ForceTorqueStates.msg
+  IMURollPitch.msg
 )
 
 add_service_files(

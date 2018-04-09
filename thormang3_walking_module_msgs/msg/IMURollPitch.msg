@@ -1,0 +1,4 @@
+float32 meas_roll_angle
+float32 meas_pitch_angle
+float32 meas_roll_velocity
+float32 meas_pitch_velocity
