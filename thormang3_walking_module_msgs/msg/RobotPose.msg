@@ -7,6 +7,7 @@ geometry_msgs/Pose mdfd_global_to_right_foot
 geometry_msgs/Pose mdfd_global_to_left_foot
 
 geometry_msgs/Point ref_zmp
+geometry_msgs/Point gen_zmp
 
 geometry_msgs/Point global_to_cob_acc
 geometry_msgs/Point robot_to_cob_acc
