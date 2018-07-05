@@ -1,6 +1,8 @@
 ####### cob_offset #######
 float32 cob_x_offset_m
 float32 cob_y_offset_m
+float32 cob_roll_offset_m
+float32 cob_pitch_offset_m
 
 ####### FeedForward #####
 float32 hip_roll_swap_angle_rad
