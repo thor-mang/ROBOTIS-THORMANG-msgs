@@ -1,3 +1,6 @@
+####### com_height #######
+float32 com_height
+
 ####### cob_offset #######
 float32 cob_x_offset_m
 float32 cob_y_offset_m
