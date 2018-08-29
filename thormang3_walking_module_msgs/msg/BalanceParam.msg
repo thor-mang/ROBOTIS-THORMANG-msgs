@@ -1,16 +1,13 @@
-####### com_height #######
+####### COM HEIGHT #######
 float32 com_height
 
-####### cob_offset #######
+####### COB OFFSETS #######
 float32 cob_x_offset_m
 float32 cob_y_offset_m
 float32 cob_roll_offset_m
 float32 cob_pitch_offset_m
 
-####### FeedForward #####
-float32 hip_roll_swap_angle_rad
-
-########## Gain ########
+########## GAINS ########
 #by gyro
 float32 foot_roll_gyro_p_gain
 float32 foot_roll_gyro_d_gain
@@ -24,10 +21,6 @@ float32 foot_pitch_angle_p_gain
 float32 foot_pitch_angle_d_gain
 
 #by ft sensor
-float32 foot_x_force_p_gain
-float32 foot_x_force_d_gain
-float32 foot_y_force_p_gain
-float32 foot_y_force_d_gain
 float32 foot_z_force_p_gain
 float32 foot_z_force_d_gain
 float32 foot_roll_torque_p_gain
@@ -35,7 +28,16 @@ float32 foot_roll_torque_d_gain
 float32 foot_pitch_torque_p_gain
 float32 foot_pitch_torque_d_gain
 
-########## TIME FREQUENCY ##########
+float32 zmp_x_p_gain
+float32 zmp_x_d_gain
+float32 zmp_y_p_gain
+float32 zmp_y_d_gain
+
+float32 foot_z_mass_gain
+float32 foot_z_damping_gain
+float32 foot_z_spring_gain
+
+########## CUT OFF FREQUENCIES ##########
 #by gyro
 float32 roll_gyro_cut_off_frequency
 float32 pitch_gyro_cut_off_frequency
@@ -50,3 +52,13 @@ float32 foot_y_force_cut_off_frequency
 float32 foot_z_force_cut_off_frequency
 float32 foot_roll_torque_cut_off_frequency
 float32 foot_pitch_torque_cut_off_frequency
+
+############# NOT USED #########################
+float32 hip_roll_swap_angle_rad 
+float32 foot_x_force_p_gain
+float32 foot_x_force_d_gain
+float32 foot_y_force_p_gain
+float32 foot_y_force_d_gain
+
+
+
